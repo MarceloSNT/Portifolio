@@ -9,8 +9,10 @@
 nav{
     background-color: #024059;
     padding: 15px;
+    text-align: end;
 }
 nav>a{
+    margin: 10px;
     color: #049dbf;
 }
 #inicio{
@@ -22,6 +24,9 @@ nav>a{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+}
+#all{
+    transform: translate(100px,50px);
 }
 h1{
     text-align: center;
@@ -38,11 +43,11 @@ h3{
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2s steps(12),blinking 0.5s infinite step-end alternate;
-    transform: translate(40px);
+    transform: translate(45px);
 }
 #ttleu{
+    transform: translate(35px);
     width: 300px;
-    transform: translate(-0px);
 }
 #txteu{
     padding: 10px;
@@ -70,7 +75,7 @@ p{
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.027);
     border-radius: 30px;
-    transform: translate(230px);
+    transform: translate(120px);
 }
 #slider{
     display: flex;
@@ -85,28 +90,54 @@ p{
 }
 
 #proj{
-    background-color: #f28705;
+    background-color: #024059;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row  wrap;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    padding: 30px;
 }
 #proj>div{
+    background-color: #f28705;
     border-radius:30px;
-    border: 1px solid #049dbf;
+    border: 2px solid #f28705;
     height: 350px;
-    margin: auto;
+    width: 350px;
+    margin: 20px;
+    animation:surgir 1s none;
+    overflow: hidden;
+}
+#proj>div:hover{
+    box-shadow: 0px 0px 100px #f28705;
+    transition: 1s;
 }
 #proj>div>a>img{
-    border-radius: 30px 30px 0px 0px;;
+    border-radius: 29px 29px 0px 0px;;
     height: 300px;
-    width: 300px;
+    width: 350px;
+    margin: auto;
 }
 #proj>div>img>p{
-    color: #024059;
+    color: #f28705;
 }
 
+#cntt{
+    background-color: #024059;
+    padding: 30px;
+}
+#cntt>h2{
+    text-align: center;
+}
+#cntt>div{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#cntt>div>img{
+    height: 50px;
+    width: 50px;
+}
 
 
 
@@ -133,5 +164,13 @@ p{
     }
     100%{
         transform: translateX(-40%);
+    }
+}
+@keyframes surgir{
+    0%{
+        transform: translate(0px,500px);
+    }
+    100%{
+        transform: translate(0px,0px);
     }
 }
