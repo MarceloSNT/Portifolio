@@ -1,0 +1,137 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+nav{
+    background-color: #024059;
+    padding: 15px;
+}
+nav>a{
+    color: #049dbf;
+}
+#inicio{
+    height: 100vh;
+    background-color: #024059;
+    padding: 50px;
+    color: #000000;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+    width:12ch;
+    border-right: 4px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(12),blinking 0.5s infinite step-end alternate;
+    transform: translate(40px);
+}
+#ttleu{
+    width: 300px;
+    transform: translate(-0px);
+}
+#txteu{
+    padding: 10px;
+    width: 700px;
+    transform: translate(-180px);
+}
+p{
+    text-align: center;
+    font-size: 1em;
+    flex: auto;
+    margin-bottom: 25px;
+}
+#imgeu{
+    height: 250px;
+    width: 240px;
+    background-color: #f28705;
+    border-radius: 50%;
+}
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.027);
+    border-radius: 30px;
+    transform: translate(230px);
+}
+#slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide 5S linear infinite ;
+}
+.imgskill{
+    height: 100px;
+    width: 100px;
+    margin-right: 200px;
+}
+
+#proj{
+    background-color: #f28705;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+#proj>div{
+    border-radius:30px;
+    border: 1px solid #049dbf;
+    height: 350px;
+    margin: auto;
+}
+#proj>div>a>img{
+    border-radius: 30px 30px 0px 0px;;
+    height: 300px;
+    width: 300px;
+}
+#proj>div>img>p{
+    color: #024059;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes typing{
+    from{
+       width:0;
+    }
+}
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateX(60%);
+    }
+    100%{
+        transform: translateX(-40%);
+    }
+}
