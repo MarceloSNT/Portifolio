@@ -26,6 +26,13 @@ nav>a{
     justify-content: center;
     align-items: center;
 }
+#ttleu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+}
 h1{
     text-align: center;
 }
@@ -34,17 +41,15 @@ h2{
     font-size: 2.5em;
 }
 h3{
-    text-align: center;
     font-size: 2em;
     width:12ch;
     border-right: 4px solid white;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2s steps(12),blinking 0.5s infinite step-end alternate;
-    transform: translate(-20px);
 }
 #txteu{
-    padding: 15px;
+    padding: 10px;
     flex: auto;
 }
 p{
