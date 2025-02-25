@@ -60,7 +60,7 @@ p{
 #imgeu{
     margin: 25px;
     height: 250px;
-    width: 250px;
+    width: 240px;
     background-color: #f28705;
     border-radius: 50%;
 }
@@ -128,7 +128,13 @@ p{
     display: flex;
     justify-content: space-evenly;
 }
-#cntt>div>img{
+#cntt>div>a>img:hover{
+    transform: translate(-4px,-6px);
+    transition: 1s;
+    box-shadow: 0px 0px 35px #049dbf;
+}
+#cntt>div>a>img{
+    border-radius: 50%;
     height: 50px;
     width: 50px;
 }
