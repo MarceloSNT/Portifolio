@@ -41,7 +41,7 @@ h3{
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2s steps(12),blinking 0.5s infinite step-end alternate;
-
+    transform: translate(-200px);
 }
 #txteu{
     padding: 15px;
