@@ -97,7 +97,7 @@ p{
     border-radius:30px;
     border: 2px solid #f28705;
     height: 350px;
-    width: 300px;
+    width: 350px;
     margin: 20px;
     animation:surgir 1s none;
     overflow: hidden;
@@ -109,7 +109,7 @@ p{
 #proj>div>a>img{
     border-radius: 29px 29px 0px 0p ;;
     height: 300px;
-    width: 300px;
+    width: 350px;
     margin: auto;
 }
 #proj>div>img>p{
