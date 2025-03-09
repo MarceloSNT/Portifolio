@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*SEÇÃO NAVEGAÇÃO*/
+nav{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.7em;
+    border-bottom: 2px solid #ffffff;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+}
+nav a{
+    text-decoration: none;
+    margin: 7px;
+    padding: 5px;
+}
+nav a:hover{
+    color: #1628c5;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+/*SEÇÃO SOBRE MIM,CONHECIMENTOS E HABILIDADES*/
+#sobre{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#sobre #fteu{
+    height: 250px;
+    width: 230px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin: 15px;
+}
+#sobre #ttleu{
+    text-align: center;
+    font-size: 2em;
+    width:25.5ch;
+    border-right: 4px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(26),blinking 0.5s infinite step-end alternate;
+}
+#sobre #ttleu2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#sobre #txteu{
+    text-align: center;
+    margin:0px 0px 20px;
+}
+
+#skills{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 550px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.027);
+    border-radius: 30px;
+}
+#slider{
+    display: flex;
+    animation: slide 5S linear infinite ;
+}
+#ftskill{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+
+@keyframes typing{
+    from{
+       width:0;
+    }
+    
+}
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: translateX(45%);
+    }
+    100%{
+        transform: translateX(-90%);
+    }
+}
